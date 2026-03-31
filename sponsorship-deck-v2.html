@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholastic Chess HK — Sponsorship Deck 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <style>
+        /* ===========================================
+           V2 — CONSULTING PITCH STYLE
+           Compact, data-driven, PDF-optimized
+           16:9 aspect ratio, page-break per slide
+           =========================================== */
+        :root {
+            --brand: #E96E20;
+            --brand-dark: #C85A16;
+            --brand-light: #F5882E;
+            --dark: #111318;
+            --dark-2: #1A1D24;
+            --dark-3: #22262E;
+            --white: #FFFFFF;
+            --gray-100: #F3F4F6;
+            --gray-200: #E5E7EB;
+            --gray-300: #D1D5DB;
+            --gray-400: #9CA3AF;
+            --gray-500: #6B7280;
+            --gray-600: #4B5563;
+            --gray-700: #374151;
+            --serif: 'Source Serif 4', Georgia, serif;
+            --sans: 'Nunito Sans', -apple-system, sans-serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--dark);
+            color: var(--white);
+            height: 100%;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===========================================
+           SLIDE — Fixed viewport, no scroll
+           =========================================== */
+        .s {
+            width: 100vw;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            scroll-snap-align: start;
+            display: flex;
+            position: relative;
+            padding: clamp(24px, 3.5vh, 48px) clamp(32px, 4vw, 72px);
+        }
+
+        .s--white {
+            background: var(--white);
+            color: var(--dark);
+        }
+
+        .s--dark {
+            background: var(--dark);
+            color: var(--white);
+        }
+
+        .s-inner {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* ===========================================
+           TYPOGRAPHY — Tight, consulting style
+           =========================================== */
+        .t-label {
+            font-family: var(--sans);
+            font-size: clamp(0.55rem, 0.75vw, 0.7rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--brand);
+            margin-bottom: clamp(4px, 0.6vh, 8px);
+        }
+
+        .t-h1 {
+            font-family: var(--serif);
+            font-size: clamp(1.8rem, 4.2vw, 3.4rem);
+            font-weight: 700;
+            line-height: 1.08;
+            letter-spacing: -0.025em;
+        }
+
+        .t-h2 {
+            font-family: var(--serif);
+            font-size: clamp(1.2rem, 2.6vw, 2rem);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .t-h3 {
+            font-family: var(--serif);
+            font-size: clamp(0.85rem, 1.4vw, 1.1rem);
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        .t-body {
+            font-size: clamp(0.68rem, 1.05vw, 0.88rem);
+            line-height: 1.55;
+            color: var(--gray-500);
+        }
+
+        .s--dark .t-body { color: var(--gray-400); }
+
+        .t-small {
+            font-size: clamp(0.58rem, 0.8vw, 0.72rem);
+            line-height: 1.45;
+        }
+
+        .t-tiny {
+            font-size: clamp(0.5rem, 0.65vw, 0.6rem);
+            line-height: 1.4;
+        }
+
+        /* ===========================================
+           ORANGE SIDE STRIPE (consulting signature)
+           =========================================== */
+        .s::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--brand);
+        }
+
+        /* ===========================================
+           LAYOUT HELPERS
+           =========================================== */
+        .row { display: flex; gap: clamp(8px, 1.5vw, 20px); }
+        .col { display: flex; flex-direction: column; }
+        .grow { flex: 1; }
+        .gap-2 { gap: clamp(2px, 0.3vh, 4px); }
+        .gap-4 { gap: clamp(4px, 0.5vh, 6px); }
+        .gap-8 { gap: clamp(6px, 1vh, 10px); }
+        .gap-12 { gap: clamp(8px, 1.2vh, 14px); }
+        .gap-16 { gap: clamp(10px, 1.6vh, 18px); }
+        .gap-20 { gap: clamp(12px, 2vh, 22px); }
+        .center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .text-center { text-align: center; }
+        .text-white { color: var(--white); }
+        .text-brand { color: var(--brand); }
+        .text-muted { color: var(--gray-400); }
+        .s--white .text-muted { color: var(--gray-500); }
+
+        /* ===========================================
+           DIVIDER
+           =========================================== */
+        .divider {
+            width: 40px;
+            height: 2px;
+            background: var(--brand);
+        }
+
+        /* ===========================================
+           KEY FACTS ROW
+           =========================================== */
+        .kf-row {
+            display: flex;
+            gap: clamp(6px, 1vw, 12px);
+        }
+
+        .kf {
+            flex: 1;
+            padding: clamp(8px, 1.2vh, 14px) clamp(10px, 1vw, 16px);
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .s--white .kf {
+            background: var(--gray-100);
+            border: 1px solid var(--gray-200);
+        }
+
+        .s--dark .kf {
+            background: var(--dark-2);
+            border: 1px solid var(--dark-3);
+        }
+
+        .kf-val {
+            font-family: var(--serif);
+            font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+            font-weight: 700;
+            color: var(--brand);
+            line-height: 1.1;
+        }
+
+        .kf-label {
+            font-size: clamp(0.52rem, 0.7vw, 0.62rem);
+            color: var(--gray-500);
+            margin-top: 2px;
+            line-height: 1.3;
+        }
+
+        .s--dark .kf-label { color: var(--gray-400); }
+
+        /* ===========================================
+           DATA CALLOUTS (Slide 3)
+           =========================================== */
+        .dc-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: clamp(6px, 1vw, 12px);
+        }
+
+        .dc {
+            padding: clamp(10px, 1.5vh, 18px) clamp(10px, 1vw, 16px);
+            border-radius: 6px;
+            border-left: 3px solid var(--brand);
+        }
+
+        .s--white .dc { background: var(--gray-100); }
+        .s--dark .dc { background: var(--dark-2); }
+
+        .dc-num {
+            font-family: var(--serif);
+            font-size: clamp(1.4rem, 3vw, 2.2rem);
+            font-weight: 700;
+            color: var(--brand);
+            line-height: 1;
+        }
+
+        .dc-text {
+            font-size: clamp(0.58rem, 0.82vw, 0.72rem);
+            line-height: 1.4;
+            margin-top: clamp(2px, 0.3vh, 4px);
+        }
+
+        .s--white .dc-text { color: var(--gray-600); }
+        .s--dark .dc-text { color: var(--gray-400); }
+
+        .dc-src {
+            font-size: clamp(0.45rem, 0.55vw, 0.52rem);
+            color: var(--gray-400);
+            margin-top: 2px;
+            font-style: italic;
+        }
+
+        /* ===========================================
+           BRAND / INVESTOR CARDS (Slide 4)
+           =========================================== */
+        .inv-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: clamp(6px, 0.8vw, 10px);
+        }
+
+        .inv {
+            padding: clamp(8px, 1vh, 14px);
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: clamp(4px, 0.5vh, 8px);
+        }
+
+        .s--dark .inv { background: var(--dark-2); border: 1px solid var(--dark-3); }
+
+        .inv-photo {
+            width: clamp(40px, 5vw, 60px);
+            height: clamp(40px, 5vw, 60px);
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--dark-3);
+        }
+
+        .inv-logo {
+            width: clamp(40px, 5vw, 60px);
+            height: clamp(40px, 5vw, 60px);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(1rem, 1.8vw, 1.5rem);
+            font-weight: 800;
+            background: var(--dark-3);
+            color: var(--white);
+        }
+
+        .inv-name {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: clamp(0.62rem, 0.85vw, 0.78rem);
+            color: var(--brand-light);
+            line-height: 1.2;
+        }
+
+        .inv-desc {
+            font-size: clamp(0.5rem, 0.68vw, 0.62rem);
+            color: var(--gray-400);
+            line-height: 1.35;
+        }
+
+        /* ===========================================
+           AUDIENCE CARDS (Slide 5)
+           =========================================== */
+        .aud-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: clamp(6px, 1vw, 12px);
+        }
+
+        .aud {
+            padding: clamp(10px, 1.2vh, 16px) clamp(10px, 1vw, 14px);
+            border-radius: 6px;
+            border-top: 3px solid var(--brand);
+        }
+
+        .s--white .aud { background: var(--gray-100); }
+
+        .aud-tag {
+            font-size: clamp(0.5rem, 0.65vw, 0.6rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--brand);
+        }
+
+        .aud-stat {
+            font-family: var(--serif);
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            font-weight: 700;
+            color: var(--dark);
+            line-height: 1.1;
+            margin-top: 2px;
+        }
+
+        .aud-detail {
+            font-size: clamp(0.55rem, 0.75vw, 0.68rem);
+            color: var(--gray-600);
+            line-height: 1.35;
+            margin-top: 2px;
+        }
+
+        /* ===========================================
+           PROFILES (Slide 6)
+           =========================================== */
+        .prof-row {
+            display: flex;
+            gap: clamp(8px, 1.5vw, 16px);
+        }
+
+        .prof {
+            flex: 1;
+            display: flex;
+            gap: clamp(8px, 1vw, 12px);
+            padding: clamp(10px, 1.2vh, 14px);
+            border-radius: 6px;
+            align-items: flex-start;
+        }
+
+        .s--white .prof { background: var(--gray-100); border: 1px solid var(--gray-200); }
+
+        .prof-photo {
+            width: clamp(48px, 5.5vw, 68px);
+            height: clamp(48px, 5.5vw, 68px);
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--brand);
+            flex-shrink: 0;
+        }
+
+        .prof-role {
+            font-size: clamp(0.5rem, 0.65vw, 0.6rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--brand);
+        }
+
+        .prof-name {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: clamp(0.75rem, 1.1vw, 0.95rem);
+        }
+
+        .prof-bio {
+            font-size: clamp(0.55rem, 0.78vw, 0.7rem);
+            color: var(--gray-600);
+            line-height: 1.4;
+        }
+
+        /* ===========================================
+           TEAM COMPOSITION (Slide 7)
+           =========================================== */
+        .tm-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: clamp(6px, 1vw, 12px);
+        }
+
+        .tm {
+            padding: clamp(10px, 1.2vh, 16px) clamp(10px, 1vw, 14px);
+            border-radius: 6px;
+            border-left: 3px solid var(--brand);
+        }
+
+        .s--dark .tm { background: var(--dark-2); }
+
+        .tm-icon {
+            font-size: clamp(1rem, 1.8vw, 1.4rem);
+            margin-bottom: clamp(2px, 0.3vh, 4px);
+        }
+
+        .tm-title {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: clamp(0.7rem, 1vw, 0.88rem);
+            color: var(--brand-light);
+            line-height: 1.2;
+        }
+
+        .tm-desc {
+            font-size: clamp(0.55rem, 0.78vw, 0.68rem);
+            color: var(--gray-400);
+            line-height: 1.35;
+            margin-top: 2px;
+        }
+
+        /* ===========================================
+           SPONSORSHIP TIERS (Slide 8)
+           =========================================== */
+        .tier-row {
+            display: flex;
+            gap: clamp(6px, 1vw, 12px);
+            align-items: stretch;
+        }
+
+        .tier {
+            flex: 1;
+            padding: clamp(10px, 1.4vh, 18px) clamp(10px, 1.2vw, 16px);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .s--white .tier {
+            background: var(--gray-100);
+            border: 1px solid var(--gray-200);
+        }
+
+        .tier--primary {
+            background: var(--brand) !important;
+            color: var(--white) !important;
+            border-color: var(--brand) !important;
+        }
+
+        .tier-badge {
+            font-size: clamp(0.5rem, 0.65vw, 0.58rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--brand);
+        }
+
+        .tier--primary .tier-badge { color: rgba(255,255,255,0.8); }
+
+        .tier-price {
+            font-family: var(--serif);
+            font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .tier--primary .tier-price { color: var(--white); }
+
+        .tier-tagline {
+            font-size: clamp(0.55rem, 0.75vw, 0.68rem);
+            font-style: italic;
+            font-family: var(--serif);
+            color: var(--gray-500);
+        }
+
+        .tier--primary .tier-tagline { color: rgba(255,255,255,0.75); }
+
+        .tier-slots {
+            font-size: clamp(0.48rem, 0.6vw, 0.55rem);
+            font-weight: 700;
+            color: var(--gray-400);
+            margin-top: clamp(2px, 0.3vh, 4px);
+        }
+
+        .tier--primary .tier-slots { color: rgba(255,255,255,0.6); }
+
+        .tier-list {
+            list-style: none;
+            margin-top: clamp(4px, 0.6vh, 8px);
+            flex: 1;
+        }
+
+        .tier-list li {
+            font-size: clamp(0.52rem, 0.72vw, 0.65rem);
+            line-height: 1.4;
+            padding: clamp(1px, 0.15vh, 2px) 0;
+            padding-left: 14px;
+            position: relative;
+            color: var(--gray-600);
+        }
+
+        .tier--primary .tier-list li { color: rgba(255,255,255,0.85); }
+
+        .tier-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            font-size: 0.7em;
+            color: var(--brand);
+        }
+
+        .tier--primary .tier-list li::before { color: rgba(255,255,255,0.7); }
+
+        /* ===========================================
+           CASE CARDS (Slide 9)
+           =========================================== */
+        .case-row {
+            display: flex;
+            gap: clamp(8px, 1.2vw, 16px);
+        }
+
+        .case {
+            flex: 1;
+            padding: clamp(12px, 1.5vh, 20px) clamp(12px, 1.2vw, 18px);
+            border-radius: 8px;
+            border-top: 3px solid var(--brand);
+        }
+
+        .s--white .case { background: var(--gray-100); }
+
+        .case-num {
+            font-family: var(--serif);
+            font-size: clamp(1.2rem, 2vw, 1.6rem);
+            font-weight: 700;
+            color: var(--brand);
+            line-height: 1;
+        }
+
+        .case-title {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: clamp(0.78rem, 1.1vw, 0.95rem);
+            margin-top: clamp(4px, 0.5vh, 6px);
+        }
+
+        .case-text {
+            font-size: clamp(0.58rem, 0.82vw, 0.72rem);
+            color: var(--gray-600);
+            line-height: 1.45;
+            margin-top: clamp(2px, 0.3vh, 4px);
+        }
+
+        /* ===========================================
+           CONTACT (Slide 10)
+           =========================================== */
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: clamp(6px, 0.8vh, 10px) clamp(12px, 1.2vw, 18px);
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: clamp(0.65rem, 0.9vw, 0.8rem);
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .s--dark .contact-link {
+            background: var(--dark-2);
+            border: 1px solid var(--dark-3);
+            color: var(--white);
+        }
+
+        .s--dark .contact-link:hover { background: var(--dark-3); }
+
+        .cta-btn {
+            display: inline-block;
+            padding: clamp(8px, 1vh, 12px) clamp(20px, 2vw, 32px);
+            background: var(--brand);
+            color: var(--white);
+            font-family: var(--sans);
+            font-size: clamp(0.65rem, 0.9vw, 0.8rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .cta-btn:hover { background: var(--brand-dark); }
+
+        /* ===========================================
+           PLAYER HIGHLIGHT (Slide 2)
+           =========================================== */
+        .player-row {
+            display: flex;
+            gap: clamp(8px, 1.2vw, 16px);
+        }
+
+        .player {
+            display: flex;
+            gap: clamp(8px, 0.8vw, 12px);
+            align-items: center;
+            padding: clamp(6px, 0.8vh, 10px) clamp(10px, 1vw, 14px);
+            border-radius: 6px;
+        }
+
+        .s--white .player { background: var(--gray-100); }
+
+        .player-photo {
+            width: clamp(36px, 4vw, 50px);
+            height: clamp(36px, 4vw, 50px);
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .player-name {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: clamp(0.7rem, 1vw, 0.85rem);
+        }
+
+        .player-desc {
+            font-size: clamp(0.55rem, 0.75vw, 0.68rem);
+            color: var(--gray-500);
+            line-height: 1.35;
+        }
+
+        /* ===========================================
+           CLOSING LINE
+           =========================================== */
+        .closing {
+            font-family: var(--serif);
+            font-size: clamp(0.7rem, 1.1vw, 0.92rem);
+            font-style: italic;
+            line-height: 1.45;
+        }
+
+        .s--white .closing { color: var(--gray-600); }
+        .s--dark .closing { color: var(--gray-400); }
+
+        /* ===========================================
+           PROGRESS BAR + COUNTER
+           =========================================== */
+        .progress {
+            position: fixed;
+            top: 0; left: 0;
+            height: 2px;
+            background: var(--brand);
+            z-index: 1000;
+            transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .counter {
+            position: fixed;
+            bottom: clamp(8px, 1.2vh, 16px);
+            right: clamp(12px, 1.5vw, 24px);
+            font-size: clamp(0.5rem, 0.65vw, 0.6rem);
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            z-index: 1000;
+            color: var(--gray-400);
+            transition: color 0.3s;
+        }
+
+        .counter--light { color: var(--gray-400); }
+
+        /* ===========================================
+           FOOTER LINE
+           =========================================== */
+        .s-footer {
+            position: absolute;
+            bottom: clamp(6px, 1vh, 12px);
+            left: clamp(32px, 4vw, 72px);
+            right: clamp(32px, 4vw, 72px);
+            font-size: clamp(0.45rem, 0.55vw, 0.52rem);
+            color: var(--gray-400);
+            border-top: 1px solid;
+            padding-top: clamp(4px, 0.5vh, 6px);
+        }
+
+        .s--dark .s-footer { border-color: var(--dark-3); }
+        .s--white .s-footer { border-color: var(--gray-200); color: var(--gray-400); }
+
+        /* ===========================================
+           STAT PILLS ROW
+           =========================================== */
+        .sp-row {
+            display: flex;
+            gap: clamp(4px, 0.6vw, 8px);
+        }
+
+        .sp {
+            flex: 1;
+            text-align: center;
+            padding: clamp(6px, 0.8vh, 10px) clamp(8px, 0.8vw, 12px);
+            border-radius: 6px;
+        }
+
+        .s--white .sp { background: var(--gray-100); border: 1px solid var(--gray-200); }
+
+        .sp-val {
+            font-family: var(--serif);
+            font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+            font-weight: 700;
+            color: var(--brand);
+            line-height: 1.1;
+        }
+
+        .sp-label {
+            font-size: clamp(0.48rem, 0.6vw, 0.55rem);
+            color: var(--gray-500);
+            line-height: 1.2;
+        }
+
+        /* ===========================================
+           ANIMATIONS — Subtle for screen, none for print
+           =========================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .s.visible .reveal { opacity: 1; transform: translateY(0); }
+
+        .rd1 { transition-delay: 0.06s; }
+        .rd2 { transition-delay: 0.12s; }
+        .rd3 { transition-delay: 0.18s; }
+        .rd4 { transition-delay: 0.24s; }
+        .rd5 { transition-delay: 0.30s; }
+
+        /* ===========================================
+           RESPONSIVE
+           =========================================== */
+        @media (max-height: 650px) {
+            .s { padding: clamp(16px, 2.5vh, 32px) clamp(24px, 3vw, 48px); }
+        }
+
+        @media (max-width: 768px) {
+            .dc-grid { grid-template-columns: repeat(2, 1fr); }
+            .inv-grid { grid-template-columns: repeat(2, 1fr); }
+            .aud-grid { grid-template-columns: repeat(2, 1fr); }
+            .tm-grid { grid-template-columns: repeat(2, 1fr); }
+            .tier-row { flex-direction: column; }
+            .case-row { flex-direction: column; }
+            .prof-row { flex-direction: column; }
+            .player-row { flex-direction: column; }
+        }
+
+        @media (max-width: 480px) {
+            .dc-grid, .inv-grid { grid-template-columns: 1fr; }
+            .kf-row { flex-direction: column; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.15s !important;
+            }
+            html { scroll-behavior: auto; }
+        }
+
+        /* ===========================================
+           PRINT / PDF — Landscape 16:9
+           =========================================== */
+        @media print {
+            html { scroll-snap-type: none; }
+            body { background: white; }
+            .progress, .counter { display: none; }
+            .reveal { opacity: 1 !important; transform: none !important; }
+
+            @page {
+                size: 297mm 167mm; /* ~16:9 landscape */
+                margin: 0;
+            }
+
+            .s {
+                height: 167mm;
+                width: 297mm;
+                page-break-after: always;
+                page-break-inside: avoid;
+                break-after: page;
+                break-inside: avoid;
+            }
+
+            .s::before { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .s--dark { background: var(--dark) !important; color: var(--white) !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .s--white { background: var(--white) !important; }
+
+            * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+        }
+
+        /* Logo */
+        .logo-sm {
+            max-width: clamp(60px, 8vw, 100px);
+            max-height: clamp(40px, 5vh, 60px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="progress" id="progressBar"></div>
+<div class="counter" id="counter">01 / 10</div>
+
+<!-- =============================================
+     SLIDE 1 — Title (DARK)
+     ============================================= -->
+<section class="s s--dark" data-theme="dark">
+    <div class="s-inner col justify-center center text-center gap-16">
+        <img src="https://static.wixstatic.com/media/4205fe_afb0c83134184c48b33f6984870759e5~mv2.gif" alt="Scholastic Chess HK" class="logo-sm reveal">
+        <div class="col gap-4 reveal rd1">
+            <div class="t-label">Official Team Sponsorship Opportunity</div>
+            <div class="divider" style="margin: 0 auto;"></div>
+        </div>
+        <h1 class="t-h1 reveal rd2">Scholastic Chess<br>Hong Kong</h1>
+        <div class="col gap-2 reveal rd3">
+            <div class="t-body" style="color: var(--gray-300);">FIDE World Team Rapid &amp; Blitz Chess Championships 2026</div>
+            <div class="t-small text-muted">Queen Elizabeth Stadium, Hong Kong&ensp;|&ensp;June 16–22, 2026</div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================
+     SLIDE 2 — The Event (WHITE)
+     ============================================= -->
+<section class="s s--white" data-theme="light">
+    <div class="s-inner col gap-12">
+        <div class="col gap-2 reveal">
+            <div class="t-label">The Event</div>
+            <h2 class="t-h2">A Global Chess Championship Comes to Hong Kong — For the First Time</h2>
+            <div class="t-small text-muted">June 16–22, 2026 &ensp;|&ensp; Queen Elizabeth Stadium</div>
+        </div>
+
+        <p class="t-body reveal rd1">This June, Hong Kong will host the FIDE World Team Rapid &amp; Blitz Chess Championships — the first major global chess championship ever held in Hong Kong. The event brings together teams from around the world to compete for a €500,000 prize fund at Queen Elizabeth Stadium.</p>
+
+        <p class="t-body reveal rd2">Hong Kong joins Düsseldorf, Astana, and London as host cities of this prestigious championship — putting our city on the global chess map.</p>
+
+        <div class="col gap-4 reveal rd3">
+            <div class="t-small" style="font-weight: 700; color: var(--gray-700);">The world's top grandmasters are expected to compete, including:</div>
+            <div class="player-row">
+                <div class="player">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Magnus_Carlsen_in_2025.jpg/250px-Magnus_Carlsen_in_2025.jpg" alt="Magnus Carlsen" class="player-photo">
+                    <div>
+                        <div class="player-name">Magnus Carlsen</div>
+                        <div class="player-desc">Norway — the highest-rated chess player in history and global chess icon</div>
+                    </div>
+                </div>
+                <div class="player">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/DingLiren24a.jpg/250px-DingLiren24a.jpg" alt="Ding Liren" class="player-photo">
+                    <div>
+                        <div class="player-name">Ding Liren</div>
+                        <div class="player-desc">China — the first-ever Chinese World Chess Champion, a household name across mainland China</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="kf-row reveal rd4">
+            <div class="kf">
+                <div class="kf-val">€500,000</div>
+                <div class="kf-label">Total prize fund</div>
+            </div>
+            <div class="kf">
+                <div class="kf-val">First Ever</div>
+                <div class="kf-label">Major global chess event in Hong Kong</div>
+            </div>
+            <div class="kf">
+                <div class="kf-val">6 Days</div>
+                <div class="kf-label">Of world-class competition</div>
+            </div>
+        </div>
+    </div>
+    <div class="s-footer">FIDE World Team Rapid &amp; Blitz Chess Championships 2026 &ensp;|&ensp; scholasticchesshk.com</div>
+</section>
+
+<!-- =============================================
+     SLIDE 3 — Why Chess? (WHITE)
+     ============================================= -->
+<section class="s s--white" data-theme="light">
+    <div class="s-inner col gap-12">
+        <div class="col gap-2 reveal">
+            <div class="t-label">Why Chess?</div>
+            <h2 class="t-h2">Chess Is Bigger Than You Think</h2>
+            <div class="t-body">The world's oldest game is having its biggest moment.</div>
+        </div>
+
+        <div class="dc-grid reveal rd1">
+            <div class="dc">
+                <div class="dc-num">600M</div>
+                <div class="dc-text">People play chess regularly worldwide — nearly 10% of the global population</div>
+                <div class="dc-src">Source: FIDE / YouGov</div>
+            </div>
+            <div class="dc">
+                <div class="dc-num">#1</div>
+                <div class="dc-text">Best-selling board game in history, played across 204 countries — more than the United Nations has member states</div>
+                <div class="dc-src">Source: FIDE (204 member federations)</div>
+            </div>
+            <div class="dc">
+                <div class="dc-num">10M</div>
+                <div class="dc-text">Concurrent viewers watched the 2024 World Chess Championship live — comparable to major sporting finals</div>
+                <div class="dc-src">Source: Chess.com</div>
+            </div>
+            <div class="dc">
+                <div class="dc-num">62M</div>
+                <div class="dc-text">Netflix households watched The Queen's Gambit — chess became prime-time entertainment</div>
+                <div class="dc-src">Source: Netflix official data, 2020</div>
+            </div>
+        </div>
+
+        <p class="closing reveal rd2">Chess isn't niche. It's a global cultural phenomenon — and it's growing faster than ever.</p>
+    </div>
+    <div class="s-footer">FIDE World Team Rapid &amp; Blitz Chess Championships 2026 &ensp;|&ensp; scholasticchesshk.com</div>
+</section>
+
+<!-- =============================================
+     SLIDE 4 — Who's Investing? (DARK)
+     ============================================= -->
+<section class="s s--dark" data-theme="dark">
+    <div class="s-inner col gap-12">
+        <div class="col gap-2 reveal">
+            <div class="t-label">Who's Investing in Chess?</div>
+            <h2 class="t-h2">Global Brands Are Backing Chess</h2>
+        </div>
+
+        <div class="inv-grid reveal rd1">
+            <div class="inv">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google" class="inv-photo" style="border-radius: 8px; background: #fff; padding: 8px; object-fit: contain;">
+                <div class="inv-name">Google</div>
+                <div class="inv-desc">Title sponsor of the 2024 World Chess Championship in Singapore ($2.5M prize fund)</div>
+            </div>
+            <div class="inv">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Erling_Haaland_June_2025.jpg/250px-Erling_Haaland_June_2025.jpg" alt="Erling Haaland" class="inv-photo">
+                <div class="inv-name">Erling Haaland</div>
+                <div class="inv-desc">Invested in Total Chess World Championship Tour — $2.7M annual prize pool</div>
+            </div>
+            <div class="inv">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg/250px-Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg" alt="Demis Hassabis" class="inv-photo">
+                <div class="inv-name">Demis Hassabis</div>
+                <div class="inv-desc">Google DeepMind CEO, 2024 Nobel Prize winner — former chess prodigy whose AlphaZero revolutionised the game</div>
+            </div>
+            <div class="inv">
+                <div class="inv-logo">🎮</div>
+                <div class="inv-name">LGD &amp; Weibo Gaming</div>
+                <div class="inv-desc">China's biggest esports orgs signed Ding Liren and Wei Yi to professional contracts in 2025</div>
+            </div>
+            <div class="inv">
+                <div class="inv-logo">Q</div>
+                <div class="inv-name">Quantbox Research</div>
+                <div class="inv-desc">Singapore — 5-year, $1.5M deal with GM Arjun Erigaisi — biggest individual sponsorship in chess history</div>
+            </div>
+        </div>
+
+        <p class="closing reveal rd2">Chess is attracting investment from tech giants, sports stars, and financial firms. The question isn't whether chess is worth sponsoring — it's whether you want to be part of it.</p>
+    </div>
+    <div class="s-footer">FIDE World Team Rapid &amp; Blitz Chess Championships 2026 &ensp;|&ensp; scholasticchesshk.com</div>
+</section>
+
+<!-- =============================================
+     SLIDE 5 — The Audience (WHITE)
+     ============================================= -->
+<section class="s s--white" data-theme="light">
+    <div class="s-inner col gap-12">
+        <div class="col gap-2 reveal">
+            <div class="t-label">The Audience You Want</div>
+            <h2 class="t-h2">Chess Reaches the Audience Every Brand Wants</h2>
+            <div class="t-body" style="color: var(--brand); font-weight: 700;">Affluent. Young. Educated. Connected.</div>
+        </div>
+
+        <div class="aud-grid reveal rd1">
+            <div class="aud">
+                <div class="aud-tag">Young</div>
+                <div class="aud-stat">44%</div>
+                <div class="aud-detail">The 18–34 age group makes up 44% of chess's audience — the most commercially valuable demographic</div>
+            </div>
+            <div class="aud">
+                <div class="aud-tag">Educated &amp; Affluent</div>
+                <div class="aud-stat">↑ HHI</div>
+                <div class="aud-detail">Chess players over-index on higher education and household income. Synonymous with intelligence and sophistication.</div>
+            </div>
+            <div class="aud">
+                <div class="aud-tag">Brand Perception</div>
+                <div class="aud-stat">70%+</div>
+                <div class="aud-detail">Associate chess with intelligence and strategic thinking. Only 2% associate chess players with below-average intelligence.</div>
+            </div>
+            <div class="aud">
+                <div class="aud-tag">Growing in Asia</div>
+                <div class="aud-stat">HKD 10M</div>
+                <div class="aud-detail">Economic impact from the 2025 HK International Open — 400+ players from 30 regions. A record-breaking edition.</div>
+            </div>
+        </div>
+
+        <p class="closing reveal rd2">Sponsoring chess doesn't just put your logo on a jersey. It puts your brand next to intelligence, strategy, and ambition.</p>
+    </div>
+    <div class="s-footer">FIDE World Team Rapid &amp; Blitz Chess Championships 2026 &ensp;|&ensp; scholasticchesshk.com</div>
+</section>
+
+<!-- =============================================
+     SLIDE 6 — Who We Are (WHITE)
+     ============================================= -->
+<section class="s s--white" data-theme="light">
+    <div class="s-inner col gap-12">
+        <div class="col gap-2 reveal">
+            <div class="t-label">Who We Are</div>
+            <h2 class="t-h2">Scholastic Chess Hong Kong — More Than a Chess Club</h2>
+            <div class="t-body">A complete chess education built for Hong Kong</div>
+        </div>
+
+        <p class="t-body reveal rd1">Founded in 2012, Scholastic Chess is one of Hong Kong's leading chess education providers — working with 250+ students across 20+ schools and our own academy. Our programme is built around a professionally designed curriculum by Dr. Pavel Martynov (PhD in Education, FIDE Master), delivered through structured 60-minute lessons in small groups of 4–6 students.</p>
+
+        <div class="sp-row reveal rd2">
+            <div class="sp">
+                <div class="sp-val">2012</div>
+                <div class="sp-label">Founded</div>
+            </div>
+            <div class="sp">
+                <div class="sp-val">20+</div>
+                <div class="sp-label">Schools</div>
+            </div>
+            <div class="sp">
+                <div class="sp-val">250+</div>
+                <div class="sp-label">Students</div>
+            </div>
+            <div class="sp">
+                <div class="sp-val">60 min</div>
+                <div class="sp-label">Structured lessons</div>
+            </div>
+        </div>
+
+        <div class="prof-row reveal rd3">
+            <div class="prof">
+                <img src="https://static.wixstatic.com/media/4205fe_d93969a3e4c04c45bb44773025df70d4~mv2.png/v1/fill/w_324,h_330,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202025-09-24%20at%2011_edited.png" alt="Oliver Conran" class="prof-photo">
+                <div class="col gap-2">
+                    <div class="prof-role">Principal</div>
+                    <div class="prof-name">Oliver Conran</div>
+                    <div class="prof-bio">FIDE School Instructor &amp; National Arbiter. Chess Promoter &amp; Tournament Director. 10+ years of teaching experience. Manages club strategy, quality assurance, and school partnerships.</div>
+                </div>
+            </div>
+            <div class="prof">
+                <img src="https://static.wixstatic.com/media/4205fe_dd51879ff2d44eef817ea607cb34cf6b~mv2.jpg/v1/crop/x_0,y_291,w_1454,h_1548/fill/w_324,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_9978%20(1)_edited_edited.jpg" alt="Dr. Pavel Martynov" class="prof-photo">
+                <div class="col gap-2">
+                    <div class="prof-role">Head Coach &amp; Curriculum Author</div>
+                    <div class="prof-name">Dr. Pavel Martynov</div>
+                    <div class="prof-bio">PhD in Education (chess pedagogy). FIDE Master. 10+ years of professional coaching. Author of the Scholastic Chess curriculum. Popular chess educator on YouTube.</div>
+                </div>
+            </div>
+        </div>
+
+        <p class="closing reveal rd4" style="font-size: var(--t-small);">Every lesson, every level, every method — grounded in evidence, not guesswork.</p>
+    </div>
+    <div class="s-footer">FIDE World Team Rapid &amp; Blitz Chess Championships 2026 &ensp;|&ensp; scholasticchesshk.com</div>
+</section>
+
+<!-- =============================================
+     SLIDE 7 — Our Team (DARK)
+     ============================================= -->
+<section class="s s--dark" data-theme="dark">
+    <div class="s-inner col gap-12">
+        <div class="col gap-2 reveal">
+            <div class="t-label">Our Team. Our Mission.</div>
+            <h2 class="t-h2">We're Sending Hong Kong to the World Stage</h2>
+            <div class="t-body" style="color: var(--gray-300);">6 players. One mission. Represent Hong Kong.</div>
+        </div>
+
+        <p class="t-body reveal rd1">The FIDE World Team Rapid &amp; Blitz Championship has a unique format: each team of 6 must include at least one female player and one recreational player. This means world-class grandmasters and young club players compete side by side.</p>
+
+        <div class="tm-grid reveal rd2">
+            <div class="tm">
+                <div class="tm-icon">♚</div>
+                <div class="tm-title">2 Grandmasters</div>
+                <div class="tm-desc">We are inviting world-class grandmasters to strengthen our competitiveness and increase the team's visibility and media reach.</div>
+            </div>
+            <div class="tm">
+                <div class="tm-icon">♝</div>
+                <div class="tm-title">1 FIDE Master</div>
+                <div class="tm-desc">Our Head Coach, Dr. Pavel Martynov, will serve as team captain and player — bringing professional-level play and leadership.</div>
+            </div>
+            <div class="tm">
+                <div class="tm-icon">♟</div>
+                <div class="tm-title">2 Local HK Talents</div>
+                <div class="tm-desc">A once-in-a-lifetime opportunity for the most talented young students of our academy to play against the best in the world.</div>
+            </div>
+            <div class="tm">
+                <div class="tm-icon">♛</div>
+                <div class="tm-title">1 Female Player</div>
+                <div class="tm-desc">We are committed to diversity in chess and proud to give a platform to local female talent.</div>
+            </div>
+        </div>
+
+        <p class="closing reveal rd3">This isn't just a chess team. It's a story — Hong Kong's next generation, competing on their home turf, against the best in the world. Your brand can be the name behind that story.</p>
+    </div>
+    <div class="s-footer">FIDE World Team Rapid &amp; Blitz Chess Championships 2026 &ensp;|&ensp; scholasticchesshk.com</div>
+</section>
+
+<!-- =============================================
+     SLIDE 8 — Sponsorship Packages (WHITE)
+     ============================================= -->
+<section class="s s--white" data-theme="light">
+    <div class="s-inner col gap-12">
+        <div class="col gap-2 reveal">
+            <div class="t-label">What Your Brand Gets</div>
+            <h2 class="t-h2">Sponsorship Packages</h2>
+            <div class="t-body">Three ways to be part of the story.</div>
+        </div>
+
+        <div class="tier-row reveal rd1">
+            <!-- EXCLUSIVE -->
+            <div class="tier tier--primary">
+                <div class="tier-badge">Exclusive Sponsor</div>
+                <div class="tier-price">$20,000 USD</div>
+                <div class="tier-tagline">Your brand IS the team.</div>
+                <div class="tier-slots">Only 1 available</div>
+                <ul class="tier-list">
+                    <li>Full naming rights: "Team [Your Brand] — Scholastic Chess HK"</li>
+                    <li>Exclusive front-of-jersey branding on all team shirts</li>
+                    <li>Logo on all team materials, banners, and digital assets</li>
+                    <li>On-site branding at the team's dedicated area</li>
+                    <li>6 days of daily social media coverage — your brand in every post</li>
+                    <li>Dedicated YouTube video report of tournament journey</li>
+                    <li>Professional photography package</li>
+                    <li>Press release to local Hong Kong media</li>
+                    <li>VIP access to the tournament</li>
+                    <li>Exclusive meet-and-greet with our grandmasters</li>
+                    <li>Private branded chess event at our academy</li>
+                    <li>Named sponsor at all Scholastic Chess 2026 events</li>
+                </ul>
+            </div>
+
+            <!-- GOLD -->
+            <div class="tier">
+                <div class="tier-badge">Gold Sponsor</div>
+                <div class="tier-price">$10,000 USD</div>
+                <div class="tier-tagline">Visible. Connected. Part of the team.</div>
+                <div class="tier-slots">Up to 2 available</div>
+                <ul class="tier-list">
+                    <li>Front-of-jersey co-branding</li>
+                    <li>Logo on team digital assets and social media graphics</li>
+                    <li>6 days of daily social media mentions</li>
+                    <li>Featured in the YouTube video report</li>
+                    <li>Included in the press release</li>
+                    <li>Tournament day pass</li>
+                    <li>Invitation to post-tournament community event</li>
+                    <li>Sponsor recognition at 2026 events</li>
+                </ul>
+            </div>
+
+            <!-- SILVER -->
+            <div class="tier">
+                <div class="tier-badge">Silver Sponsor</div>
+                <div class="tier-price">$5,000 USD</div>
+                <div class="tier-tagline">Support the mission. Get seen.</div>
+                <div class="tier-slots">Up to 3 available</div>
+                <ul class="tier-list">
+                    <li>Jersey sleeve branding</li>
+                    <li>Logo on team social media graphics</li>
+                    <li>3+ social media mentions during tournament week</li>
+                    <li>Mentioned in the YouTube video report</li>
+                    <li>Sponsor recognition at 2026 events</li>
+                    <li>Thank-you feature in community newsletter</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="t-tiny text-muted reveal rd2">All sponsorship packages include a formal Sponsorship Agreement. Deliverables are guaranteed in writing.</div>
+    </div>
+    <div class="s-footer">FIDE World Team Rapid &amp; Blitz Chess Championships 2026 &ensp;|&ensp; scholasticchesshk.com</div>
+</section>
+
+<!-- =============================================
+     SLIDE 9 — The Case (WHITE)
+     ============================================= -->
+<section class="s s--white" data-theme="light">
+    <div class="s-inner col gap-16">
+        <div class="col gap-2 reveal">
+            <div class="t-label">The Case for Sponsorship</div>
+            <h2 class="t-h2">Why This Sponsorship Makes Sense</h2>
+        </div>
+
+        <div class="case-row reveal rd1">
+            <div class="case">
+                <div class="case-num">01</div>
+                <div class="case-title">Community Impact</div>
+                <div class="case-text">You're sending Hong Kong children to compete on the world stage — in their home city, for the first time. This is a story parents, schools, and media will care about. Your brand is the name behind it.</div>
+            </div>
+            <div class="case">
+                <div class="case-num">02</div>
+                <div class="case-title">Brand Visibility in the Right Context</div>
+                <div class="case-text">Chess audiences are young, educated, and affluent. Your brand will be visible on jerseys, in social media content, in video, and in press coverage — all within a sport associated with intelligence and sophistication.</div>
+            </div>
+            <div class="case">
+                <div class="case-num">03</div>
+                <div class="case-title">Limited Availability</div>
+                <div class="case-text">The championship is June 16–22 — less than 12 weeks away. Sponsor slots are limited: one Exclusive, two Gold, three Silver. Early sponsors get first choice.</div>
+            </div>
+        </div>
+
+        <p class="closing reveal rd2 text-center">Community impact. Smart brand positioning. A world-class event on home ground. At a price point that works for Hong Kong businesses.</p>
+    </div>
+    <div class="s-footer">FIDE World Team Rapid &amp; Blitz Chess Championships 2026 &ensp;|&ensp; scholasticchesshk.com</div>
+</section>
+
+<!-- =============================================
+     SLIDE 10 — Contact / CTA (DARK)
+     ============================================= -->
+<section class="s s--dark" data-theme="dark">
+    <div class="s-inner col justify-center center text-center gap-16">
+        <img src="https://static.wixstatic.com/media/4205fe_afb0c83134184c48b33f6984870759e5~mv2.gif" alt="Scholastic Chess HK" class="logo-sm reveal">
+
+        <div class="col gap-4 reveal rd1">
+            <h2 class="t-h1">Be Part of the Story</h2>
+            <div class="col gap-2">
+                <div class="t-body" style="color: var(--gray-300); font-size: clamp(0.8rem, 1.3vw, 1.05rem);">
+                    Hong Kong. World stage. First time ever.<br>
+                    Your brand. Our team. Their moment.
+                </div>
+            </div>
+        </div>
+
+        <div class="col gap-8 center reveal rd2">
+            <div class="t-small text-muted">Reach out to discuss sponsorship options and secure your place.</div>
+            <div class="col gap-2 center">
+                <div class="t-h3 text-white">Oliver Conran</div>
+                <div class="t-small text-muted">Principal, Scholastic Chess Hong Kong</div>
+            </div>
+            <div class="row center" style="gap: clamp(6px, 1vw, 12px);">
+                <a href="https://wa.me/85266295092" class="contact-link" target="_blank" rel="noopener">💬&ensp;+852 6629 5092</a>
+                <a href="https://instagram.com/scholasticchesshk" class="contact-link" target="_blank" rel="noopener">📷&ensp;@scholasticchesshk</a>
+            </div>
+        </div>
+    </div>
+    <div class="s-footer" style="text-align: center;">FIDE World Team Rapid &amp; Blitz Chess Championships 2026 &ensp;|&ensp; Queen Elizabeth Stadium, Hong Kong &ensp;|&ensp; June 16–22, 2026</div>
+</section>
+
+<script>
+(() => {
+    const slides = document.querySelectorAll('.s');
+    const bar = document.getElementById('progressBar');
+    const counter = document.getElementById('counter');
+    const total = slides.length;
+    let current = 0;
+
+    function update(i) {
+        current = i;
+        bar.style.width = ((i + 1) / total * 100) + '%';
+        const n = String(i + 1).padStart(2, '0');
+        const t = String(total).padStart(2, '0');
+        counter.textContent = n + ' / ' + t;
+        counter.className = 'counter' + (slides[i].dataset.theme === 'light' ? ' counter--light' : '');
+    }
+
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                update(Array.from(slides).indexOf(e.target));
+            }
+        });
+    }, { threshold: 0.5 });
+
+    slides.forEach(s => obs.observe(s));
+    update(0);
+    slides[0].classList.add('visible');
+
+    document.addEventListener('keydown', e => {
+        if (['ArrowDown','ArrowRight',' '].includes(e.key)) {
+            e.preventDefault();
+            slides[Math.min(current + 1, total - 1)].scrollIntoView({ behavior: 'smooth' });
+        } else if (['ArrowUp','ArrowLeft'].includes(e.key)) {
+            e.preventDefault();
+            slides[Math.max(current - 1, 0)].scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    let ty = 0;
+    document.addEventListener('touchstart', e => { ty = e.changedTouches[0].screenY; }, { passive: true });
+    document.addEventListener('touchend', e => {
+        const d = ty - e.changedTouches[0].screenY;
+        if (Math.abs(d) > 50) {
+            slides[d > 0 ? Math.min(current + 1, total - 1) : Math.max(current - 1, 0)]
+                .scrollIntoView({ behavior: 'smooth' });
+        }
+    }, { passive: true });
+})();
+</script>
+</body>
+</html>
